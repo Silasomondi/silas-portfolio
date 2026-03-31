@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silas Omondi Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #ff4c60;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-grid iframe {
+    width: 100%;
+    height: 250px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.service {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+    <div>
+        <h1>Silas Omondi</h1>
+        <p>Storyteller | Journalist | Creative Developer</p>
+        <button class="btn" onclick="scrollToSection('contact')">Work With Me</button>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am Silas Omondi, a graduate of the University of Nairobi with a degree in Journalism and Media Studies.
+        I am passionate about storytelling, media production, and digital innovation.
+    </p>
+</section>
+
+<!-- PORTFOLIO -->
+<section>
+    <h2>Portfolio</h2>
+
+    <!-- Images -->
+    <div class="portfolio-grid">
+        <img src="images/photo1.jpg" alt="Photography 1">
+        <img src="images/photo2.jpg" alt="Photography 2">
+    </div>
+
+    <!-- Videos -->
+    <h3 style="margin-top:40px;">Video Projects</h3>
+    <div class="video-grid">
+        <iframe src="https://drive.google.com/file/d/1NF6Zrb_iF0Vkabq9vEjTsAeS2EybfsML/preview" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1PQMIQynjXyBtamM-xp0-gXsRloQWGeR-/preview" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1BPZ2LtEVwJVUVdUaHKxazOj2-Nxa-eHJ/preview" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1pS3jct6cgRoQI0v4YnFfiVewM-XShTOY/preview" allow="autoplay"></iframe>
+    </div>
+
+    <!-- WordPress -->
+    <h3 style="margin-top:40px;">My Blog</h3>
+    <p>
+        Visit my WordPress site:
+        <a href="http://uonsportstoday.wordpress.com/" target="_blank">UON Sports Today</a>
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section>
+    <h2>Work With Me</h2>
+    <div class="services">
+        <div class="service">Journalism & Reporting</div>
+        <div class="service">Videography & Editing</div>
+        <div class="service">Photography</div>
+        <div class="service">Content Writing</div>
+        <div class="service">Social Media Management</div>
+        <div class="service">Digital Marketing</div>
+        <div class="service">Web Development</div>
+    </div>
+</section>
+
+<!-- BRAND COLLAB -->
+<section>
+    <h2>Brand Collaboration</h2>
+    <p>
+        I collaborate with brands to create compelling visual and digital stories that engage audiences.
+        Open to partnerships, campaigns, and creative projects.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:omondisilas098@gmail.com">omondisilas098@gmail.com</a></p>
+
+    <form action="https://formspree.io/f/xgopklro" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button class="btn">Send</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Follow me:</p>
+    <div class="social-links">
+        <a href="http://linktr.ee/omondisilas" target="_blank">Linktree</a> |
+        <a href="https://www.linkedin.com/in/silas-omondi-598ba4275" target="_blank">LinkedIn</a>
+    </div>
+</footer>
+
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
