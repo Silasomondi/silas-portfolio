@@ -15,6 +15,10 @@
   gtag('config', 'G-8X6VLYTB1T');
 </script>
 
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 <style>
 body {
     margin: 0;
@@ -105,6 +109,24 @@ footer {
     margin: 0 10px;
     color: white;
     text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links i {
+    margin-right: 6px;
+}
+}
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+section {
+    padding: 80px 20px;
 }
 </style>
 </head>
@@ -113,10 +135,16 @@ footer {
 
 <!-- HERO -->
 <header>
-    <div>
-        <h1>Silas Omondi</h1>
-        <p>Storyteller | Journalist | Creative Developer</p>
-        <button class="btn" onclick="scrollToSection('contact')">Work With Me</button>
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+
+        <img src="images/profile.jpg"
+             alt="Silas Omondi"
+             style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:20px;">
+
+        <h1>Hi, I'm Silas Omondi</h1>
+        <p>I tell powerful stories through journalism, video, and digital media.</p>
+
+        <a href="#contact" class="btn">Hire Me</a>
     </div>
 </header>
 
@@ -129,13 +157,21 @@ footer {
     </p>
 </section>
 
+<!-- EXPERIENCE -->
+<section>
+    <h2>Experience</h2>
+    <p>
+      Worked with media teams, covered sports events, and produced digital content for online platforms.
+    </p>
+  </section>
+
 <!-- PORTFOLIO -->
 <section>
     <h2>Portfolio</h2>
 
     <div class="portfolio-grid">
         <img src="images/photo1.jpg" alt="Photography 1">
-        <img src="images/photo2.jpg" alt="Photography 2">
+        
     </div>
 
     <h3 style="margin-top:40px;">Video Projects</h3>
@@ -191,12 +227,18 @@ footer {
 
 <!-- FOOTER -->
 <footer>
-    <p>Follow me:</p>
+    <p>© 2026 Silas Omondi</p>
+  
     <div class="social-links">
-        <a href="http://linktr.ee/omondisilas" target="_blank">Linktree</a> |
-        <a href="https://www.linkedin.com/in/silas-omondi-598ba4275" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/silas-omondi-598ba4275" target="_blank">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+  
+      <a href="http://linktr.ee/omondisilas" target="_blank">
+        <i class="fa-solid fa-link"></i> Portfolio
+      </a>
     </div>
-</footer>
+  </footer>
 
 <script>
 function scrollToSection(id) {
