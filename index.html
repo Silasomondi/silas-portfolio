@@ -143,7 +143,7 @@ section {
              alt="Silas Omondi"
              style="width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:20px;">
 
-        <h1>Hi, I'm Silas Omondi</h1>
+             <h1 id="typing"></h1>
         <p>I tell powerful stories through journalism, video, and digital media.</p>
 
         <a href="#contact" class="btn">Hire Me</a>
@@ -257,6 +257,21 @@ function scrollToSection(id) {
 <script>
   AOS.init();
 </script>
+
+<script>
+    const text = "Hi, I'm Silas Omondi";
+    let i = 0;
+    
+    function typeWriter() {
+        if (i < text.length) {
+            document.getElementById("typing").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 60);
+        }
+    }
+    
+    window.onload = typeWriter;
+    </script>
 
 </body>
 </html>
